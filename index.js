@@ -84,6 +84,10 @@ class BaseParser {
  *
  * e.g. ['1000', 'Tritanium']
  *
+ * This is the data copied from the main blueprint view, showing the
+ * materials required by the blueprint (show info).  It can *not* parse the
+ * materials from the industry window where you right click and "copy material information"
+ *
  * @constructor
  */
 
