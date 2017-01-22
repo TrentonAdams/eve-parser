@@ -1,7 +1,5 @@
-.idea/workspace.xml
 target/*
-.idea/libraries/
-.idea/artifacts/
+.idea/
 **/node_modules
 build/
 dist/
