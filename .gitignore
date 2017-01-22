@@ -1,0 +1,10 @@
+.idea/workspace.xml
+target/*
+.idea/libraries/
+.idea/artifacts/
+**/node_modules
+build/
+dist/
+bower_components/
+public/lib/
+scratch/
