@@ -75,6 +75,9 @@ class BaseParser {
     }
 }
 
+module.exports.BaseParser = BaseParser;
+
+
 /**
  * Parses blueprint materials in the form of...
  *
@@ -338,4 +341,8 @@ EveParser.parsers = [
     new BlueprintParser(), new InventoryListParser(),
     new ItemThenCountParser(), new CountThenItemParser()];
 
+/**
+ * {@link BaseParser}
+ * @type {EveParser}
+ */
 module.exports.EveParser = EveParser;

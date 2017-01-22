@@ -1,0 +1,10 @@
+== Development Prep ==
+git clone https://github.com/TrentonAdams/eve-parser.git
+cd eve-parser
+npm install
+
+== Running Tests ==
+jasmine
+
+== Usage ==
+See the parse.js for an example.  I will be adding a web based example as well.
