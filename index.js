@@ -102,7 +102,7 @@ class BlueprintParser extends BaseParser {
         // number only at the beginning of the strong
         this.itemCount = "^((?:[-]{0,1}(?:\\d+)(?:,\\d)*){1,})";
         // any alphabetic string, including optional spaces, at the end
-        this.itemName = " x ([a-zA-Z\\-]+(?:\\s+[a-zA-Z\\-]+)*)$";
+        this.itemName = " x ([a-zA-Z\\-]+(?:\\s+[a-zA-Z\\-]+)*).*$";
         this.regex = this.itemCount + this.itemName;
     }
 }
@@ -133,7 +133,7 @@ class InventoryListParser extends BaseParser {
         this.itemCount = "([-]{0,1}\\d+(?:,\\d+)*)";
         this.regex = this.itemName +
             "\\s*" + this.itemCount +
-            "\\s*[a-zA-Z]+(?:\\s+[a-zA-Z]+)*\\s*\\d+(?:,\\d+)*(?:.\d*)* m3$";
+            "\\s*[a-zA-Z]+(?:\\s+[a-zA-Z]+)*\\s*\\d+(?:,\\d+)*(?:.\d*)* m3.*$";
     }
 
     /**
@@ -173,7 +173,7 @@ class ItemThenCountParser extends BaseParser {
         // need.  This is defined by (?:regex here).  Note the '?:'
         this.itemName = "^([a-zA-Z]+(?:\\s+[a-zA-Z]+)*)";
         this.itemCount = "([-]{0,1}\\d+(?:,\\d+)*)";
-        this.regex = this.itemName + "\\s*" + this.itemCount + "$";
+        this.regex = this.itemName + "\\s*" + this.itemCount + ".*$";
     }
 
     /**
@@ -214,7 +214,7 @@ class CountThenItemParser extends BaseParser {
         this.itemCount = "^([-]{0,1}\\d+(?:,\\d+)*)";
         // alphabetic sequence with possible but not required spaces
         this.itemName = "([a-zA-Z]+(?:\\s+[a-zA-Z]+)*)";
-        this.regex = this.itemCount + "\\s*" + this.itemName + "$";
+        this.regex = this.itemCount + "\\s*" + this.itemName + ".*$";
     }
 
     /**

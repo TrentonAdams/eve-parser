@@ -7,7 +7,8 @@ describe('CountThenItemParser is valid', function ()
 {
     var inputLines = [
         "1,000  Integrity Response Drones",
-        "1,000  Integrity Response Drones"];
+        "1,000  Integrity Response Drones",
+        "1,000  Integrity Response Drones "];
 
     var parser = new CountThenItemParser();
     /*
