@@ -1,3 +1,6 @@
+Eve parser is a javascript parser compatible with node as well as
+browserify for use in your web development work.
+
 == Development Prep ==
  git clone https://github.com/TrentonAdams/eve-parser.git
  cd eve-parser
@@ -7,4 +10,8 @@
  jasmine
 
 == Usage ==
-See the parse.js for an example.  I will be adding a web based example as well.
+See the parse.js for an example.  I will be adding a web based example as
+well.  To try the parse.js...
+
+npm install -g eve-parser
+node parse.js # then pase to stdin
