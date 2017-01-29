@@ -1,6 +1,6 @@
 {
   "name": "eve-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Javascript eve data parser for parsing various types of data that you can copy/paste from eve.",
   "main": "index.js",
   "dependencies": {
