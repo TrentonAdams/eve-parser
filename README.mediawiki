@@ -13,5 +13,5 @@ browserify for use in your web development work.
 See the parse.js for an example.  I will be adding a web based example as
 well.  To try the parse.js...
 
-npm install -g eve-parser
-node parse.js # then pase to stdin
+ npm install -g eve-parser
+ node parse.js # then pase to stdin
