@@ -20,7 +20,7 @@ class CountThenItemParser extends BaseParser {
         // need.  This is defined by (?:regex here).  Note the '?:'
         this.itemCount = "^([-]{0,1}\\d+(?:,\\d+)*)";
         // alphabetic sequence with possible but not required spaces
-        this.itemName = "([a-zA-Z]+(?:\\s+[a-zA-Z]+)*)";
+        this.itemName = "([a-zA-Z\\-]+(?:\\s+[a-zA-Z\\-]+)*)";
         this.regex = this.itemCount + "\\s*" + this.itemName + ".*$";
     }
 

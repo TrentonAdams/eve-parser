@@ -6,9 +6,9 @@ var CountThenItemParser = require('../index.js').CountThenItemParser;
 describe('CountThenItemParser is valid', function ()
 {
     var inputLines = [
-        "1,000  Integrity Response Drones",
-        "1,000  Integrity Response Drones",
-        "1,000  Integrity Response Drones "];
+        "1,000  Nano-Factory",
+        "1,000  Nano-Factory",
+        "1,000  Nano-Factory "];
 
     var parser = new CountThenItemParser();
     /*
@@ -34,7 +34,7 @@ describe('CountThenItemParser is valid', function ()
             var match = [0, 0];
             match = inputLines[index].match(parser.regex);
             expect(match[1]).toEqual("1,000");
-            expect(match[2]).toEqual("Integrity Response Drones");
+            expect(match[2]).toEqual("Nano-Factory");
         }
     });
     it('CountThenItemParser parsing successful', function ()
@@ -42,7 +42,7 @@ describe('CountThenItemParser is valid', function ()
         for (var index = 0; index < inputLines.length; index++)
         {
             expect(parser.parse(inputLines[index])).toEqual(
-                ['1000', 'Integrity Response Drones']);
+                ['1000', 'Nano-Factory']);
         }
     });
 });
